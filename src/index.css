@@ -1,0 +1,30 @@
+html{
+  touch-action: none
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+  margin:0;
+  padding:0;
+}
+a {
+text-decoration: none;
+}
+ul,li,ol,dl,dd,dt {
+list-style: none;
+}
+img{border:0;vertical-align:middle}  
+a,
+/* input, */
+button {
+appearance:none;
+-moz-appearance:none; /* Firefox */
+-webkit-appearance:none; /* Safari Chrome */
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,button,select,textarea{outline:none}
+textarea{resize: none;}
+table{border-collapse:collapse;border-spacing:0}
+p{word-break:break-all;}  
+html,body,#app {height: 100%;}
+::-moz-placeholder { color: #cccccc; }
+::-webkit-input-placeholder { color:#cccccc;}
+:-ms-input-placeholder { color:#cccccc; }
