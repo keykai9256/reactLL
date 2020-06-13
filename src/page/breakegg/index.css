@@ -1,0 +1,221 @@
+body {
+    background: #302281;
+}
+
+.app{
+    font-size: 0.28rem;
+	height: 20.86rem;
+	padding: 0 .36rem;
+	padding-top: 3.6rem;
+}
+.eggbox {
+	text-align: center;
+	padding-bottom: 1rem;
+	position: relative;
+	margin: 0 .3rem;
+    height: 3.05rem;
+}
+
+.egg {
+	width: 3.13rem;
+	position: absolute;
+}
+
+.egg-img {
+	width: 100%;
+}
+.stopanimate{
+	animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+.egg1{
+    left: 1.65rem;
+	-webkit-animation:egg_move_1 4s linear 0s infinite normal forwards;
+    animation:egg_move_1 4s linear 0s infinite normal forwards;
+}
+.egg2{
+	right: -40px;
+	/*top: 10px;*/
+	-webkit-animation:egg_move_2 4s linear 0s infinite normal forwards;
+    animation:egg_move_2 4s linear 0s infinite normal forwards;
+}
+.egg3{
+	left: -30px;
+	/*top: 10px;*/
+	-webkit-animation:egg_move_3 4s linear 0s infinite normal forwards;
+    animation:egg_move_3 4s linear 0s infinite normal forwards;
+}
+@-webkit-keyframes egg_move_3{
+    0%,100%{
+        -webkit-transform: translateX(0rem) scale(0.8);
+    }
+    16%{
+        -webkit-transform: translateX(4.5rem) scale(0.8);
+        z-index: 0;
+    }
+    33%{
+        -webkit-transform: translateX(4.5rem) scale(0.8);
+    }
+    49%{
+        -webkit-transform: translateX(2.3rem) scale(1);
+        z-index: 1;
+    }  
+    65%{
+        -webkit-transform: translateX(2.3rem) scale(1);
+    }
+    81%{
+       -webkit-transform: translateX(0rem) scale(0.8);
+    }
+ 
+}
+@keyframes egg_move_3{
+    0%,100%{
+        transform: translateX(0rem) scale(0.8);
+    }
+    16%{
+        transform: translateX(4.5rem) scale(0.8);
+        z-index: 0;
+    }
+    33%{
+        transform: translateX(4.5rem) scale(0.8);
+    }
+    49%{
+        transform: translateX(2.3rem) scale(1);
+        z-index: 1;
+    }  
+    65%{
+        transform: translateX(2.3rem) scale(1);
+    }
+    81%{
+       transform: translateX(0rem) scale(0.8);
+    }
+}
+@-webkit-keyframes egg_move_2{
+    0%,100%{
+        -webkit-transform: translateX(0rem) scale(0.8);
+    }
+    16%{
+        -webkit-transform: translateX(-2.1rem) scale(1);
+        z-index: 1;
+    }
+    33%{
+        -webkit-transform: translateX(-2.1rem) scale(1);
+    }
+    49%{
+        -webkit-transform: translateX(-4.3rem) scale(0.8);
+        z-index: 0;
+    }  
+    65%{
+        -webkit-transform: translateX(-4.3rem) scale(0.8);
+    }
+    81%{
+       -webkit-transform: translateX(0rem) scale(0.8);
+    }
+ 
+}
+@keyframes egg_move_2{
+    0%,100%{
+        transform: translateX(0rem) scale(0.8);
+    }
+    16%{
+        transform: translateX(-2.1rem) scale(1);
+        z-index: 1;
+    }
+    33%{
+        transform: translateX(-2.1rem) scale(1);
+    }
+    49%{
+        transform: translateX(-4.5rem) scale(0.8);
+        z-index: 0;
+    }  
+    65%{
+        transform: translateX(-4.5rem) scale(0.8);
+    }
+    81%{
+       transform: translateX(0rem) scale(0.8);
+    }
+}
+
+@-webkit-keyframes egg_move_1{
+    0%,100%{
+        -webkit-transform: translateX(0rem) scale(1);
+        z-index: 1;
+    }
+    16%{
+        -webkit-transform: translateX(-2.2rem) scale(0.8);
+        z-index: 0;
+    }
+    33%{
+        -webkit-transform: translateX(-2.2rem) scale(0.8);
+    }
+    49%{
+        -webkit-transform: translateX(2rem) scale(0.8);
+    }  
+    65%{
+        -webkit-transform: translateX(2rem) scale(0.8);
+    }
+    81%{
+       -webkit-transform: translateX(0rem) scale(1);
+    }
+ 
+}
+@keyframes egg_move_1{
+    0%,100%{
+        transform: translateX(0rem) scale(1);
+        z-index: 1;
+    }
+    16%{
+        transform: translateX(-2.2rem) scale(0.8);
+        z-index: 0;
+    }
+    33%{
+        transform: translateX(-2.2rem) scale(0.8);
+    }
+    49%{
+        transform: translateX(2.3rem) scale(0.8);
+    }  
+    65%{
+        transform: translateX(2.3rem) scale(0.8);
+    }
+    81%{
+       transform: translateX(0rem) scale(1);
+    }
+}
+.hammer{
+	width: 1rem;
+	left: 75px;
+	top: -10px;
+	position: absolute;
+	-webkit-animation:hammer_move_1 1s linear 0s 1 alternate forwards;
+    animation:hammer_move_1 1s linear 0s 1 alternate forwards;
+	transform-origin:100% 100%;
+	opacity: 0.01;
+}
+@-webkit-keyframes hammer_move_1{
+    0%{
+        -webkit-transform:none;
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform: rotate(50deg);
+        opacity: 1;
+    }  
+    99%{
+        -webkit-transform: rotate(5deg);
+        opacity: 1;
+    } 
+}
+@keyframes hammer_move_1{
+    0%{
+        transform:none;
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(50deg);
+        opacity: 1;
+    }  
+    99%{
+        transform: rotate(5deg);
+        opacity: 1;
+    }  
+}

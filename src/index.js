@@ -8,11 +8,13 @@ import store from './redux/store'
 import './index.css';
 import My from './page/my/my'
 import Home from './page/home/home'
+import BreakEgg from './page/breakegg/index'
 
 ReactDOM.render(
     <Provider store={store}>
         <HashRouter>
             <Switch>
+                <Route path="/BreakEgg" component={BreakEgg}></Route>
                 <Route path="/my" component={My}></Route>
                 <Route component={Home}></Route>
             </Switch>

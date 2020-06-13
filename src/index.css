@@ -1,30 +1,111 @@
-html{
-  touch-action: none
+*默认样式*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
-  margin:0;
-  padding:0;
-}
+
 a {
-text-decoration: none;
+	text-decoration: none;
 }
-ul,li,ol,dl,dd,dt {
-list-style: none;
+
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+	list-style: none;
 }
-img{border:0;vertical-align:middle}  
+
+img {
+	border: 0;
+	vertical-align: middle
+}
+
 a,
-/* input, */
+input,
 button {
-appearance:none;
--moz-appearance:none; /* Firefox */
--webkit-appearance:none; /* Safari Chrome */
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	appearance: none;
+	-moz-appearance: none;
+	/* Firefox */
+	-webkit-appearance: none;
+	/* Safari 和 Chrome */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/* 透明度设置为0，去掉点击链接和文本框对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android) */
 }
-input,button,select,textarea{outline:none}
-textarea{resize: none;}
-table{border-collapse:collapse;border-spacing:0}
-p{word-break:break-all;}  
-html,body,#app {height: 100%;}
-::-moz-placeholder { color: #cccccc; }
-::-webkit-input-placeholder { color:#cccccc;}
-:-ms-input-placeholder { color:#cccccc; }
+div,a,img {
+		    -webkit-tap-highlight-color: transparent;
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    user-select:none;
+		}
+input,textarea {
+	outline: none
+}
+
+textarea {
+	resize: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+p {
+	word-break: break-all;
+}
+
+html,
+body {
+	/*font-family:PingFangSC-Light,sans-serif,"宋体","Arial Narrow";*/
+	min-height: 100%;
+	/*color: #464646;*/
+}
+*{
+	 /*1rem = 100px*/
+	padding:0;margin: 0;
+	font-size: 0.28rem;
+	box-sizing: border-box;
+	border:0;
+	outline: none
+}
+::-moz-placeholder {
+	color: #cccccc;
+}
+
+::-webkit-input-placeholder {
+	color: #cccccc;
+}
+
+:-ms-input-placeholder {
+	color: #cccccc;
+}
+*::-webkit-scrollbar { width: 0 }
+
+/*默认样式*/
