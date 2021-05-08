@@ -1,6 +1,6 @@
 create-react-app react-d
 npm run eject
-### 安装antd-mobile 可选22444444444444
+### 安装antd-mobile 可选22444444444
 1.npm install antd-mobile --save
 
 2.入口页面 (html 或 模板) 相关设置
