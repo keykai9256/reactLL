@@ -1,3 +1,4 @@
+111111111
 create-react-app react-d
 npm run eject
 ### 安装antd-mobile 可选22444444444
